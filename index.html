@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dan Crane · stay home. out 2.2.27</title>
+  <meta name="description" content="Dan Crane: songwriter and rapper from the South of England. New album stay home. out 2 February 2027. Get an unreleased song free.">
+  <link rel="canonical" href="https://dancrane78.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dan Crane">
+  <meta property="og:title" content="Dan Crane · stay home. out 2.2.27">
+  <meta property="og:description" content="New album out 2 February. Get a song nobody's heard yet, free.">
+  <meta property="og:url" content="https://dancrane78.github.io/">
+  <meta property="og:image" content="https://dancrane78.github.io/epk/assets/og/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dancrane78.github.io/epk/assets/og/og-image.jpg">
+  <meta name="theme-color" content="#e8e2d8">
+  <link rel="icon" href="/epk/assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/epk/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="site.css">
+  <script src="/epk/content.js" defer></script>
+  <script src="fan.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="bar">
+    <a href="#top" class="bar__logo"><img src="/epk/assets/brand/logo.svg" alt="dan crane. back to top" width="92" height="47"></a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#listen">listen</a></li>
+        <li class="bar__free"><a href="#free-song">free song</a></li>
+        <li><a href="#videos">videos</a></li>
+        <li><a href="#music">music</a></li>
+        <li><a href="#live">live</a></li>
+        <li><a href="#shop">shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: the new album -->
+    <section class="hero" id="top" aria-labelledby="hero-h">
+      <div class="hero__text">
+        <p class="kicker">new album · out <span data-k="release.dateLong"></span></p>
+        <h1 id="hero-h"><img class="hero__title" src="/epk/assets/brand/stay-home-title.svg" alt="stay home." width="1144" height="257"></h1>
+        <p class="hero__tag" data-fan="tagline"></p>
+        <p class="countdown" id="countdown" hidden><b id="countdown-n"></b> <span id="countdown-w"></span></p>
+        <div class="hero__cta" id="hero-cta">
+          <a class="btn btn--ink" href="#free-song" id="cta-free">get a free song</a>
+          <a class="btn btn--line" href="#listen">listen now</a>
+        </div>
+      </div>
+      <img class="hero__cover" id="hero-cover" src="/epk/assets/cover/stay-home.jpg" alt="" width="1024" height="1024" fetchpriority="high">
+    </section>
+
+    <!-- FREE SONG -->
+    <section class="free" id="free-song" aria-labelledby="free-h">
+      <div class="free__inner">
+        <img class="free__cover" src="/epk/assets/releases/music-to-sit-down-to.jpg" alt="Music To Sit Down To cover" width="600" height="600" loading="lazy">
+        <div class="free__body">
+          <p class="kicker kicker--light">unreleased · free</p>
+          <h2 id="free-h">a song nobody's heard yet.</h2>
+          <p class="free__text" id="free-text"></p>
+          <form class="free__form" id="free-form" method="post" action="https://app.kit.com/forms/10227105/subscriptions">
+            <label class="sr-only" for="free-email">Email address</label>
+            <input id="free-email" type="email" name="email_address" required autocomplete="email" placeholder="your email">
+            <button type="submit" class="btn btn--ink">send me the song</button>
+          </form>
+          <p class="free__small" id="free-small"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTEN -->
+    <section class="section" id="listen" aria-labelledby="listen-h">
+      <h2 id="listen-h">listen.</h2>
+      <div class="listen" id="listen-list"></div>
+      <ul class="pills" id="listen-links" aria-label="Listen on"></ul>
+    </section>
+
+    <!-- VIDEOS -->
+    <section class="section" id="videos" aria-labelledby="videos-h">
+      <h2 id="videos-h">videos.</h2>
+      <div class="vids" id="video-list"></div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="section" id="music" aria-labelledby="music-h">
+      <h2 id="music-h">the records.</h2>
+      <p class="lede" data-k="lede"></p>
+      <ul class="records" id="records"></ul>
+    </section>
+
+    <!-- LIVE -->
+    <section class="section" id="live" aria-labelledby="live-h">
+      <h2 id="live-h">live.</h2>
+      <div class="live">
+        <ol class="shows" id="shows"></ol>
+        <ul class="strip" id="live-photos" aria-label="Live photos"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-h">
+      <img class="about__photo" id="about-photo" src="/epk/assets/photos/press-8.jpg" alt="" loading="lazy">
+      <div class="about__text">
+        <h2 id="about-h">about.</h2>
+        <p data-k="bioShort"></p>
+        <p class="soft" id="press-line"></p>
+        <p class="credit soft" id="photo-credit"></p>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="section" id="shop" aria-labelledby="shop-h">
+      <h2 id="shop-h">shop.</h2>
+      <ul class="shop" id="shop-list"></ul>
+    </section>
+  </main>
+
+  <footer class="foot" id="contact">
+    <div class="foot__inner">
+      <div>
+        <img class="foot__logo" src="/epk/assets/brand/logo-light.svg" alt="dan crane." width="160" height="81">
+        <ul class="foot__links" id="profiles"></ul>
+      </div>
+      <div class="foot__contact">
+        <p class="kicker kicker--light">booking and everything else</p>
+        <p><a id="contact-email"></a></p>
+        <p><a id="contact-ig"></a></p>
+        <p><a href="/epk/">press kit</a></p>
+      </div>
+    </div>
+    <p class="foot__copy" data-k="footer"></p>
+  </footer>
+
+  <noscript><p class="noscript">This page needs JavaScript to show its music and links. Everything is also on <a href="/epk/">the press kit</a>.</p></noscript>
+</body>
+</html>
